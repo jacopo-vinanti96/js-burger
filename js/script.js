@@ -3,7 +3,8 @@ var addIngredient = document.getElementsByClassName('add-ingredient'),
     burgerName = document.getElementById('burger-name'),
     calculate = document.getElementById('calculate'),
     coupon = document.getElementById('coupon'),
-    couponValid = [ "sconto", "paninozzo", "boolean" ],
+    couponValid,
+    couponValidArr = [ "sconto", "paninozzo", "boolean" ],
     i,
     opaqueCoupon = document.getElementById('opaque-coupon-text'),
     opaqueTextBtn = document.getElementById('opaque-text-2'),
@@ -14,6 +15,7 @@ var addIngredient = document.getElementsByClassName('add-ingredient'),
 
 // Se l' utente clicca su "calculate" allora...
 calculate.addEventListener("click", function() {
+  couponValid = false;
   opaqueCoupon.className = "opacity0";
   opaqueTextBtn.className = "opacity0";
   opaqueTextEmpty.className = "";
@@ -28,12 +30,14 @@ calculate.addEventListener("click", function() {
     if ( sum == 50 ) {
       opaqueTextEmpty.className = "opacity1";
     } else {
-      for ( i = 0; i < couponValid.length; i++ ) {
-        if ( coupon.value == couponValid[i] ) {
+      for ( i = 0; i < couponValidArr.length; i++ ) {
+        if ( coupon.value == couponValidArr[i] ) {
           sum -= sum * 0.2;
-        } else if ( coupon.value != "" ) {
-          opaqueCoupon.className = "opacity1";
+          couponValid = true;
         }
+      }
+      if ( coupon.value != "" && couponValid == false ) {
+        opaqueCoupon.className = "opacity1";
       }
     }
     total.innerHTML = "$ " + sum.toFixed(2);

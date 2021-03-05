@@ -13,48 +13,50 @@
       <h1>Create your burger</h1>
     </header>
     <main>
-      <input id="burger-name" type="text" placeholder="Name your burger">
-      <span id="opaque-text" class="opacity0">You must enter a name</span>
-      <h2>Ingredients</h2>
-      <div class="container-ingredient">
-        <label for="cheese">
-          <span>Cheese</span> <input id="cheese" class="add-ingredient" type="checkbox" value="3"> <span>add</span>
-        </label>
-      </div>
-      <div class="container-ingredient">
-        <label for="egg">
-          <span>Egg</span> <input id="egg" class="add-ingredient" type="checkbox" value="4"> <span>add</span>
-        </label>
-      </div>
-      <div class="container-ingredient">
-        <label for="mustard">
-          <span>Mustard</span> <input id="mustard" class="add-ingredient" type="checkbox" value="6"> <span>add</span>
-        </label>
-      </div>
-      <div class="container-ingredient">
-        <label for="tomato">
-          <span>Tomato</span> <input id="tomato" class="add-ingredient" type="checkbox" value="2"> <span>add</span>
-        </label>
-      </div>
-      <div class="container-ingredient">
-        <label for="lettuce">
-          <span>Lettuce</span> <input id="lettuce" class="add-ingredient" type="checkbox" value="2"> <span>add</span>
-        </label>
-      </div>
-      <div class="container-ingredient">
-        <label for="ketchup">
-          <span>Ketchup</span> <input id="ketchup" class="add-ingredient" type="checkbox" value="1"> <span>add</span>
-        </label>
-      </div>
-      <div>
-        <span>Discount Coupon</span>
-        <input id="coupon" type="text" placeholder="Enter coupon">
-        <span id="opaque-coupon-text" class="opacity0">This coupon is invalid</span>
-      </div>
-      <button id="calculate" type="button" name="button">Calculate</button>
-      <span id="opaque-text-2" class="opacity0">Error!</span>
-      <div>
-        <p id="opaque-text-3" class="">Use at least 1 ingredient.</p>
+      <div class="main_container">
+        <input id="burger-name" type="text" placeholder="Name your burger">
+        <span id="opaque-text" class="opacity0">You must enter a name</span>
+        <h2>Ingredients</h2>
+        <div class="container-ingredient">
+          <label for="cheese">
+            <span>Cheese</span> <input id="cheese" class="add-ingredient" type="checkbox" value="3"> <span>add</span>
+          </label>
+        </div>
+        <div class="container-ingredient">
+          <label for="egg">
+            <span>Egg</span> <input id="egg" class="add-ingredient" type="checkbox" value="4"> <span>add</span>
+          </label>
+        </div>
+        <div class="container-ingredient">
+          <label for="mustard">
+            <span>Mustard</span> <input id="mustard" class="add-ingredient" type="checkbox" value="6"> <span>add</span>
+          </label>
+        </div>
+        <div class="container-ingredient">
+          <label for="tomato">
+            <span>Tomato</span> <input id="tomato" class="add-ingredient" type="checkbox" value="2"> <span>add</span>
+          </label>
+        </div>
+        <div class="container-ingredient">
+          <label for="lettuce">
+            <span>Lettuce</span> <input id="lettuce" class="add-ingredient" type="checkbox" value="2"> <span>add</span>
+          </label>
+        </div>
+        <div class="container-ingredient">
+          <label for="ketchup">
+            <span>Ketchup</span> <input id="ketchup" class="add-ingredient" type="checkbox" value="1"> <span>add</span>
+          </label>
+        </div>
+        <div class="container-coupon">
+          <span>Discount Coupon</span>
+          <input id="coupon" type="text" placeholder="Enter coupon">
+          <span id="opaque-coupon-text" class="opacity0">This coupon is invalid</span>
+        </div>
+        <button id="calculate" type="button" name="button">Calculate</button>
+        <span id="opaque-text-2" class="opacity0">Error!</span>
+        <div class="btn-condition">
+          <p id="opaque-text-3" class="">Use at least 1 ingredient.</p>
+        </div>
       </div>
     </main>
     <footer>

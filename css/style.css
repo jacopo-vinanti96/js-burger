@@ -6,10 +6,6 @@
 }
 
 /* MIX */
-.container {
-  width: 800px;
-}
-
 .opacity0 {
   display: none;
 }
@@ -17,6 +13,21 @@
 .opacity1 {
   display: inline;
   color: red;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* BODY */
+.container {
+  height: 100vh;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Header */
@@ -28,10 +39,28 @@ header {
 /* Main */
 main {
   padding: 40px;
+  height: 100%;
 }
 
-main > * {
+.main_container > * {
   margin-bottom: 10px;
+}
+
+.main_container h2 {
+  width: 100%;
+}
+
+.container-ingredient {
+  width: 50%;
+  float: left;
+}
+
+.container-coupon {
+  width: 100%;
+}
+
+.btn-condition {
+  width: 100%;
 }
 
 /* Footer */
@@ -48,4 +77,5 @@ footer {
 
 footer #total {
   font-size: 25px;
+  font-weight: 700;
 }
