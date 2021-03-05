@@ -1,16 +1,13 @@
+// Dichiarazione variabili
 var burgerName = document.getElementById('burger-name'),
     addIngredient = document.getElementsByClassName('add-ingredient'),
-    opaqueText = document.getElementsByClassName('opacity0'),
+    opaqueText = document.getElementById('opaque-text'),
+    opaqueTextBtn = document.getElementById('opaque-text-2'),
     sum,
     total = document.getElementById('total'),
     calculate = document.getElementById('calculate');
 
-    console.log(addIngredient[1].value);
-    console.log(calculate);
-    console.log(burgerName);
-
-
-
+// Se l' utente clicca su "calculate" allora...
 calculate.addEventListener("click", function() {
   sum = 50;
   if ( burgerName.value != "" ) {
@@ -22,7 +19,7 @@ calculate.addEventListener("click", function() {
     total.innerHTML = sum + "€";
   } else {
     opaqueText.className = "opacity1";
-    alert("You must enter a name")
+    opaqueTextBtn.className = "opacity1";
   }
 }
 );
