@@ -49,6 +49,7 @@
       <div>
         <span>Discount Coupon</span>
         <input id="coupon" type="text" placeholder="Enter coupon">
+        <span id="opaque-coupon-text" class="opacity0">This coupon is invalid</span>
       </div>
       <button id="calculate" type="button" name="button">Calculate</button>
       <span id="opaque-text-2" class="opacity0">Error!</span>
@@ -57,8 +58,10 @@
       </div>
     </main>
     <footer>
-      <h2>Your price</h2>
-      <span id="total">50.00€</span>
+      <div class="footer_container">
+        <h2>Your price</h2>
+        <span id="total">$ 50.00</span>
+      </div>
     </footer>
   </div>
   <script src="js/script.js" charset="utf-8"></script>
