@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Create your burger - burgerozzi.com</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Create your burger</h1>
+    </header>
+    <main>
+      <input id="burger-name" type="text" placeholder="Name your burger">
+      <h2>Ingredients</h2>
+      <div class="container-ingredient">
+        <label for="cheese">
+          <span>Cheese</span> <input id="cheese" class="add-ingredient" type="checkbox" value="3"> <span>add</span>
+        </label>
+      </div>
+      <div class="container-ingredient">
+        <label for="egg">
+          <span>Egg</span> <input id="egg" class="add-ingredient" type="checkbox" value="4"> <span>add</span>
+        </label>
+      </div>
+      <div class="container-ingredient">
+        <label for="mustard">
+          <span>Mustard</span> <input id="mustard" class="add-ingredient" type="checkbox" value="6"> <span>add</span>
+        </label>
+      </div>
+      <div class="container-ingredient">
+        <label for="tomato">
+          <span>Tomato</span> <input id="tomato" class="add-ingredient" type="checkbox" value="2"> <span>add</span>
+        </label>
+      </div>
+      <div class="container-ingredient">
+        <label for="lettuce">
+          <span>Lettuce</span> <input id="lettuce" class="add-ingredient" type="checkbox" value="2"> <span>add</span>
+        </label>
+      </div>
+      <div class="container-ingredient">
+        <label for="ketchup">
+          <span>Ketchup</span> <input id="ketchup" class="add-ingredient" type="checkbox" value="1"> <span>add</span>
+        </label>
+      </div>
+      <button id="calculate" type="button" name="button">Calculate</button>
+    </main>
+    <footer>
+      <h2>Your price</h2>
+      <span id="total">50€</span>
+    </footer>
+  </div>
+</body>
+</html>
