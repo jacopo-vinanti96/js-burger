@@ -12,6 +12,7 @@ var burgerName = document.getElementById('burger-name'),
 calculate.addEventListener("click", function() {
   opaqueText.className = "opacity0";
   opaqueTextBtn.className = "opacity0";
+  opaqueTextEmpty.className = "";
   sum = 50;
   if ( burgerName.value != "" ) {
     for ( var i = 0; i < addIngredient.length; i++ ) {
@@ -19,7 +20,7 @@ calculate.addEventListener("click", function() {
         sum += parseInt(addIngredient[i].value);
       }
     }
-    if ( sum = 50 ) {
+    if ( sum == 50 ) {
       opaqueTextEmpty.className = "opacity1";
     }
     total.innerHTML = sum + "€";
