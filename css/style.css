@@ -23,11 +23,11 @@ main > * {
 }
 
 .opacity0 {
-  opacity: 0;
+  display: none;
 }
 
 .opacity1 {
-  opacity: 1;
+  display: inline;
   color: red;
 }
 
