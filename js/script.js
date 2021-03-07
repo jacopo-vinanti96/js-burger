@@ -13,6 +13,61 @@ var addIngredient = document.getElementsByClassName('add-ingredient'),
     sum,
     total = document.getElementById('total');
 
+//Funzione mostra icona onClick per le checkbox
+addIngredient[0].addEventListener("click", function() {
+  if ( addIngredient[0].checked == true ) {
+  addIngredient[0].className += " check-add-ingredient";
+  } else {
+    addIngredient[0].className = "add-ingredient";
+  }
+}
+);
+
+addIngredient[1].addEventListener("click", function() {
+  if ( addIngredient[1].checked == true ) {
+  addIngredient[1].className += " check-add-ingredient";
+  } else {
+    addIngredient[1].className = "add-ingredient";
+  }
+}
+);
+
+addIngredient[2].addEventListener("click", function() {
+  if ( addIngredient[2].checked == true ) {
+  addIngredient[2].className += " check-add-ingredient";
+  } else {
+    addIngredient[2].className = "add-ingredient";
+  }
+}
+);
+
+addIngredient[3].addEventListener("click", function() {
+  if ( addIngredient[3].checked == true ) {
+  addIngredient[3].className += " check-add-ingredient";
+  } else {
+    addIngredient[3].className = "add-ingredient";
+  }
+}
+);
+
+addIngredient[4].addEventListener("click", function() {
+  if ( addIngredient[4].checked == true ) {
+  addIngredient[4].className += " check-add-ingredient";
+  } else {
+    addIngredient[4].className = "add-ingredient";
+  }
+}
+);
+
+addIngredient[5].addEventListener("click", function() {
+  if ( addIngredient[5].checked == true ) {
+  addIngredient[5].className += " check-add-ingredient";
+  } else {
+    addIngredient[5].className = "add-ingredient";
+  }
+}
+);
+
 // Se l' utente clicca su "calculate" allora...
 calculate.addEventListener("click", function() {
   couponValid = false;

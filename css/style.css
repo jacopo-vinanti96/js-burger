@@ -21,19 +21,37 @@
   clear: both;
 }
 
+/* TYPO */
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.add-color {
+  color: #FB728B;
+}
+
 /* BODY */
 .container {
-  height: 100vh;
   width: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /* Header */
 header {
   background-color: #FDBB40;
-  padding: 60px 40px 40px;
+  padding: 55px 35px 35px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: -18%;
+  right: -8%;
 }
 
 /* Main */
@@ -42,25 +60,112 @@ main {
   height: 100%;
 }
 
-.main_container > * {
-  margin-bottom: 10px;
+.main_container > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+#burger-name {
+  font-size: 30px;
+  font-weight: 400;
+  border: none;
+  margin-bottom: 30px;
 }
 
 .main_container h2 {
   width: 100%;
+  font-weight: normal;
 }
 
-.container-ingredient {
+.container-ingredient > * {
+  margin-bottom: 15px;
+}
+
+.box-ingredient {
   width: 50%;
   float: left;
+}
+
+.box-ingredient label > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+.box-ingredient img {
+  width: 55px;
+  vertical-align: middle;
+}
+
+.add-ingredient {
+  position: relative;
+}
+
+.add-ingredient::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FB728B;
+  z-index: 2;
+}
+
+.check-add-ingredient::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  font-size: 17px;
+  transform: translate(-50%, -50%);
 }
 
 .container-coupon {
   width: 100%;
 }
 
+#coupon {
+  border: none;
+  width: 70%;
+  margin-left: 10px;
+  font-size: 15px;
+  background-color: #FFF6E4;
+  padding: 3px 0;
+}
+
+#opaque-coupon-text {
+  display: block;
+  pointer-events: none;
+  opacity: 0;
+  text-align: center;
+}
+
+#opaque-coupon-text.opacity1 {
+  opacity: 1;
+}
+
+#opaque-text-2,
+#calculate {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#calculate {
+  border-radius: 8px;
+  border: none;
+  background-color: #FDBB40;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 10px 22px;
+}
+
 .btn-condition {
   width: 100%;
+  text-align: center;
 }
 
 /* Footer */
@@ -73,6 +178,10 @@ footer {
 .footer_container {
   display: flex;
   justify-content: space-between;
+}
+
+footer h2 {
+  font-weight: 700;
 }
 
 footer #total {
