@@ -14,9 +14,9 @@ var addIngredient = document.getElementsByClassName("add-ingredient"),
     total = document.getElementById('total');
 
 //Funzione mostra icona onClick per le checkbox
-for ( var i = 0; i < addIngredient.length; i++ ) {
+for ( i = 0; i < addIngredient.length; i++ ) {
   addIngredient[i].addEventListener("click", function() {
-    addIngredient[i].classList.toggle("check-add-ingredient");
+    this.classList.toggle("check-add-ingredient");
   });
 }
 
